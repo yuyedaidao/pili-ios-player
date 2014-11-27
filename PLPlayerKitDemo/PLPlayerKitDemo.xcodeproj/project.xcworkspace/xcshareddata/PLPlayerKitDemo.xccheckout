@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>565E9416-A80E-4420-B3D6-2AA0A3016976</string>
+	<key>IDESourceControlProjectName</key>
+	<string>PLPlayerKitDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1572C2605581CAFA6E620B982A8CF730602185E5</key>
+		<string>https://github.com/pili-io/pili-ios-player.git</string>
+		<key>81834507F0BD19F8B6B1057829F540E7CEEA5540</key>
+		<string>https://github.com/why404/pili-ios-sdk.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>PLPlayerKitDemo/PLPlayerKitDemo.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1572C2605581CAFA6E620B982A8CF730602185E5</key>
+		<string>../../..</string>
+		<key>81834507F0BD19F8B6B1057829F540E7CEEA5540</key>
+		<string>../../../../pili-ios-sdk</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/pili-io/pili-ios-player.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1572C2605581CAFA6E620B982A8CF730602185E5</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1572C2605581CAFA6E620B982A8CF730602185E5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>pili-ios-player</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>81834507F0BD19F8B6B1057829F540E7CEEA5540</string>
+			<key>IDESourceControlWCCName</key>
+			<string>pili-ios-sdk</string>
+		</dict>
+	</array>
+</dict>
+</plist>
