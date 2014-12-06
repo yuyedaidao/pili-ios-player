@@ -8,29 +8,18 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "6.0"
 
-  s.source       = { :git => "https://github.com/pili-io/pili-ios-player.git", :tag => "1.0.", :submodules => false }
+  s.source       = { :git => "https://github.com/pili-io/pili-ios-player.git", :tag => "1.0." }
   s.requires_arc = true
 
-  s.public_header_files = "Classes/**/*.h"
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
+  s.public_header_files = "PLPlayerKit/PLPlayerKit/PLPlayerKit.h", "PLPlayerKit/PLPlayerKit/PLVideoPlayerViewController.h"
+  s.source_files  = "PLPlayerKit/PLPlayerKit/PLPlayerKit.h"
 
-  # s.resource  = "icon.png"
-  # s.resources = "Resources/*.png"
+  s.resources = "PLPlayerKit/PLPlayerKit/PLPlayerKit.bundle/*.png"
 
   s.frameworks = "UIKit", "Foundation", "CoreGraphics", "MediaPlayer", "CoreAudio", "AudioToolbox", "Accelerate", "QuartzCore", "OpenGLES"
 
   s.libraries = "libiconv", "libz"
 
-
-  # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  If your library depends on compiler flags you can set them in the xcconfig hash
-  #  where they will only apply to your library. If you depend on other Podspecs
-  #  you can include multiple dependencies to ensure it works.
-
-  # s.requires_arc = true
-
-  # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # s.dependency "JSONKit", "~> 1.4"
+  s.xcconfig = { "LIBRARY_SEARCH_PATHS" => "$(SRCROOT)/libs/ffmpeg/include" }
 
 end
