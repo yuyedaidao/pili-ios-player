@@ -6,14 +6,13 @@ Pod::Spec.new do |s|
   s.license      = {  :type => 'MIT', :file => 'LICENSE' }
   s.author       = { "0dayZh" => "0day.zh@gmail.com" }
 
-  s.platform     = :ios, "7.0"
+  s.platform     = :ios, "6.0"
 
   s.source       = { :git => "https://github.com/pili-io/pili-ios-player.git", :tag => "#{s.version}" }
   s.requires_arc = true
 
   s.public_header_files = "PLPlayerKit/PLPlayerKit/PLPlayerKit.h", "PLPlayerKit/PLPlayerKit/PLVideoPlayerViewController.h"
-
-  s.source_files  = "PLPlayerKit/PLPlayerKit/PLPlayerKit.h", "PLPlayerKit/PLPlayerKit/PLAudioManager.{h,m}", "PLPlayerKit/PLPlayerKit/PLLogger.h", "PLPlayerKit/PLPlayerKit/PLMovieDecoder.{h,m}", "PLPlayerKit/PLPlayerKit/PLMovieGLView.{h,m}", "PLPlayerKit/PLPlayerKit/PLVideoPlayerViewController.{h,m}"
+  s.source_files  = "PLPlayerKit/PLPlayerKit/*.{h,m}"
 
   s.resources = "PLPlayerKit/PLPlayerKit/PLPlayerKit.bundle/*.png"
 
@@ -26,7 +25,7 @@ Pod::Spec.new do |s|
     ss.source_files         = "PLPlayerKit/libs/ffmpeg/include/**/*.h"
     ss.public_header_files  = "PLPlayerKit/libs/ffmpeg/include/**/*.h"
     ss.header_mappings_dir  = "PLPlayerKit/libs/ffmpeg/include"
-    ss.vendored_libraries   = "PLPlayerKit/libs/ffmpeg/lib/*.a"
+    ss.vendored_libraries   = "PLPlayerKit/libs/ffmpeg/lib/*"
     ss.libraries = "avcodec", "avformat", "avutil", "swresample", "swscale"
   end
 
