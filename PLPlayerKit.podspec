@@ -5,11 +5,12 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/pili-io/pili-ios-player"
   s.license      = {  :type => 'MIT', :file => 'LICENSE' }
   s.author       = { "0dayZh" => "0day.zh@gmail.com" }
-
   s.platform     = :ios, "6.0"
-
   s.source       = { :git => "https://github.com/pili-io/pili-ios-player.git", :tag => "#{s.version}" }
   s.requires_arc = true
+
+  s.preserve_paths = 'PLPlayerKit/libs/ffmpeg/include/**/*h', 'PLPlayerKit/libs/ffmpeg/lib/*.a'
+  s.xcconfig      = { 'LIBRARY_SEARCH_PATHS' => '$(PODS_ROOT)/PLPlayerKit/libs/ffmpeg/include' }
 
   s.public_header_files = "PLPlayerKit/PLPlayerKit/PLPlayerKit.h", "PLPlayerKit/PLPlayerKit/PLVideoPlayerViewController.h"
   s.source_files  = "PLPlayerKit/PLPlayerKit/*.{h,m}"
