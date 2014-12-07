@@ -9,9 +9,6 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/pili-io/pili-ios-player.git", :tag => "#{s.version}" }
   s.requires_arc = true
 
-  s.preserve_paths = 'PLPlayerKit/libs/ffmpeg/include/**/*h', 'PLPlayerKit/libs/ffmpeg/lib/*.a'
-  s.xcconfig      = { 'LIBRARY_SEARCH_PATHS' => '$(PODS_ROOT)/PLPlayerKit/libs/ffmpeg/include' }
-
   s.public_header_files = "PLPlayerKit/PLPlayerKit/PLPlayerKit.h", "PLPlayerKit/PLPlayerKit/PLVideoPlayerViewController.h"
   s.source_files  = "PLPlayerKit/PLPlayerKit/*.{h,m}"
 
@@ -23,11 +20,10 @@ Pod::Spec.new do |s|
   s.default_subspec = "precompiled"
 
   s.subspec "precompiled" do |ss|
-    ss.source_files         = "PLPlayerKit/libs/ffmpeg/include/**/*.h"
-    ss.public_header_files  = "PLPlayerKit/libs/ffmpeg/include/**/*.h"
-    ss.header_mappings_dir  = 'PLPlayerKit/libs/ffmpeg/include'
+    ss.preserve_paths         = "PLPlayerKit/libs/ffmpeg/include/**/*.h"
     ss.vendored_libraries   = 'PLPlayerKit/libs/ffmpeg/lib/*.a'
     ss.libraries = "avcodec", "avformat", "avutil", "swresample", "swscale"
+    ss.xcconfig = { 'HEADER_SEARCH_PATHS' => "${PODS_ROOT}/#{s.name}/PLPlayerKit/libs/ffmpeg/include/**" }
   end
 
 end
