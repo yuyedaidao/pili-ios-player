@@ -1,0 +1,2 @@
+PODS_PLPLAYERKIT_LIBRARY_SEARCH_PATHS = $(SRCROOT)/libs/ffmpeg/include
+PODS_PLPLAYERKIT_OTHER_LDFLAGS = -l"iconv" -l"z" -framework "Accelerate" -framework "AudioToolbox" -framework "CoreAudio" -framework "CoreGraphics" -framework "Foundation" -framework "MediaPlayer" -framework "OpenGLES" -framework "QuartzCore" -framework "UIKit"

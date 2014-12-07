@@ -1,0 +1,10 @@
+PODS:
+  - PLPlayerKit (1.0.0)
+
+DEPENDENCIES:
+  - PLPlayerKit (= 1.0.0)
+
+SPEC CHECKSUMS:
+  PLPlayerKit: bfc3cfe4082b6cc86bb09f132dbd5e855195f451
+
+COCOAPODS: 0.34.4
