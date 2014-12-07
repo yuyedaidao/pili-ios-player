@@ -613,6 +613,31 @@
 					"$(PROJECT_DIR)/libs/PLPlayerKit",
 					"$(PROJECT_DIR)/libs/ffmpeg/lib",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"Pods-PLPlayerKit\"",
+					"-l\"iconv\"",
+					"-l\"z\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CoreAudio\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"MediaPlayer\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"UIKit\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "d93be2ce-16d0-4d00-aede-da95fd92e8d5";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -637,6 +662,31 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/libs/PLPlayerKit",
 					"$(PROJECT_DIR)/libs/ffmpeg/lib",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"Pods-PLPlayerKit\"",
+					"-l\"iconv\"",
+					"-l\"z\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CoreAudio\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"MediaPlayer\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"UIKit\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "f3705073-63fe-4944-98e0-d7755f6ab671";

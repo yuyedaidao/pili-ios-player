@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.public_header_files = "PLPlayerKit/PLPlayerKit/PLPlayerKit.h", "PLPlayerKit/PLPlayerKit/PLVideoPlayerViewController.h"
-  s.source_files  = "PLPlayerKit/PLPlayerKit/PLPlayerKit.h"
+  s.source_files  = "PLPlayerKit/PLPlayerKit/*.{h,m}"
 
   s.resources = "PLPlayerKit/PLPlayerKit/PLPlayerKit.bundle/*.png"
 
@@ -20,6 +20,11 @@ Pod::Spec.new do |s|
 
   s.libraries = "iconv", "z"
 
-  s.xcconfig = { "LIBRARY_SEARCH_PATHS" => "$(SRCROOT)/libs/ffmpeg/include" }
+  s.subspec 'FFmpeg' do |ffmpeg|
+    ffmpeg.preserve_paths = 'PLPlayerKit/libs/ffmpeg/include/*'
+    ffmpeg.vendored_libraries = 'PLPlayerKit/libs/ffmpeg/lib/*.a'
+    ffmpeg.libraries = 'avcodec', 'avformat', 'avutil', 'swresample', 'swscale'
+    ffmpeg.xcconfig = { 'HEADER_SEARCH_PATHS' => "${PODS_ROOT}/#{s.name}/PLPlayerKit/libs/ffmpeg/include/**" }
+  end
 
 end
