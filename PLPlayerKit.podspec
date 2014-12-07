@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.default_subspec = "precompiled"
 
   s.subspec "precompiled" do |ss|
-    ss.preserve_paths         = "PLPlayerKit/libs/ffmpeg/include/**/*.h"
+    ss.preserve_paths         = "PLPlayerKit/libs/ffmpeg/include/**/*.h", 'PLPlayerKit/libs/ffmpeg/lib/*.a'
     ss.vendored_libraries   = 'PLPlayerKit/libs/ffmpeg/lib/*.a'
     ss.libraries = "avcodec", "avformat", "avutil", "swresample", "swscale"
     ss.xcconfig = { 'HEADER_SEARCH_PATHS' => "${PODS_ROOT}/#{s.name}/PLPlayerKit/libs/ffmpeg/include/**" }
