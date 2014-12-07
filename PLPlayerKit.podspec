@@ -5,6 +5,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/pili-io/pili-ios-player"
   s.license      = {  :type => 'MIT', :file => 'LICENSE' }
   s.author       = { "0dayZh" => "0day.zh@gmail.com" }
+  s.social_media_url = "http://twitter.com/0dayZh"
 
   s.platform     = :ios, "6.0"
 
