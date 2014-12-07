@@ -24,8 +24,8 @@ Pod::Spec.new do |s|
   s.subspec "precompiled" do |ss|
     ss.source_files         = "PLPlayerKit/libs/ffmpeg/include/**/*.h"
     ss.public_header_files  = "PLPlayerKit/libs/ffmpeg/include/**/*.h"
-    ss.header_mappings_dir  = "PLPlayerKit/libs/ffmpeg/include"
-    ss.vendored_libraries   = "PLPlayerKit/libs/ffmpeg/lib/libavcodec.a", "PLPlayerKit/libs/ffmpeg/lib/libavformat.a", "PLPlayerKit/libs/ffmpeg/lib/libavutil.a", "PLPlayerKit/libs/ffmpeg/lib/libswresample.a", "PLPlayerKit/libs/ffmpeg/lib/libswscale.a"
+    ss.header_mappings_dir  = 'PLPlayerKit/libs/ffmpeg/include'
+    ss.vendored_libraries   = 'PLPlayerKit/libs/ffmpeg/lib/*.a'
     ss.libraries = "avcodec", "avformat", "avutil", "swresample", "swscale"
   end
 
