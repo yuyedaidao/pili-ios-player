@@ -51,8 +51,6 @@
 /* Begin PBXFileReference section */
 		761DAE491A0B299200B0AEDF /* libPLPlayerKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPLPlayerKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		761DAE611A0B2A5200B0AEDF /* PLPlayerKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLPlayerKit.h; sourceTree = "<group>"; };
-		7628103A1A22DB7D00781D6D /* PLVideoPlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLVideoPlayerController.h; sourceTree = "<group>"; };
-		7628103B1A22DB7D00781D6D /* PLVideoPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLVideoPlayerController.m; sourceTree = "<group>"; };
 		762F5CCA1A146B8F00F9CE13 /* PLAudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLAudioManager.h; sourceTree = "<group>"; };
 		762F5CCB1A146B8F00F9CE13 /* PLAudioManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLAudioManager.m; sourceTree = "<group>"; };
 		762F5CCC1A146B8F00F9CE13 /* PLLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLLogger.h; sourceTree = "<group>"; };
@@ -199,7 +197,6 @@
 		761DAE621A0B2A9B00B0AEDF /* Player */ = {
 			isa = PBXGroup;
 			children = (
-				7628104E1A2641CE00781D6D /* TODO */,
 				7628103D1A22E1CC00781D6D /* Private */,
 				762F5CCE1A146B8F00F9CE13 /* PLPlayerKit.bundle */,
 				762F5CD31A146B8F00F9CE13 /* PLVideoPlayerViewController.h */,
@@ -220,15 +217,6 @@
 				762F5CD21A146B8F00F9CE13 /* PLMovieGLView.m */,
 			);
 			name = Private;
-			sourceTree = "<group>";
-		};
-		7628104E1A2641CE00781D6D /* TODO */ = {
-			isa = PBXGroup;
-			children = (
-				7628103A1A22DB7D00781D6D /* PLVideoPlayerController.h */,
-				7628103B1A22DB7D00781D6D /* PLVideoPlayerController.m */,
-			);
-			name = TODO;
 			sourceTree = "<group>";
 		};
 		762F5CD91A14702500F9CE13 /* libs */ = {
