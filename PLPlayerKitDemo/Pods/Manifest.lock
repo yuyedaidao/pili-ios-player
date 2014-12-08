@@ -1,10 +1,12 @@
 PODS:
-  - PLPlayerKit (1.0.0)
+  - PLPlayerKit (1.0.1):
+    - PLPlayerKit/precompiled
+  - PLPlayerKit/precompiled (1.0.1)
 
 DEPENDENCIES:
-  - PLPlayerKit (= 1.0.0)
+  - PLPlayerKit (= 1.0.1)
 
 SPEC CHECKSUMS:
-  PLPlayerKit: bfc3cfe4082b6cc86bb09f132dbd5e855195f451
+  PLPlayerKit: ecc1ce55d42f9583d6cd919b3e3d625695752fee
 
 COCOAPODS: 0.34.4

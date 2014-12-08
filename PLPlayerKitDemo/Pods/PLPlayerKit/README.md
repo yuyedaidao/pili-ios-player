@@ -118,6 +118,7 @@ git submodule add https://github.com/pili-io/pili-ios-player.git /Vendor/pili-io
 - iOS Target : >= iOS 7
 
 ## 4 版本历史
-
+- 1.0.1
+	- CocoaPods 版本初始化
 - 1.0.0
 	- 完成基本的 RTMP/HLS 流播放播放器
