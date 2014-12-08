@@ -7,8 +7,6 @@ PLPlayerKit 是为 **pili.io** 流媒体云服务提供的一套播放直播流�
 
 - [1 快速开始](#1-快速开始)
 	- [1.1 配置工程](#1.1-配置工程)
-		- [1.1.1 二进制包方式](#1.1.1-二进制包方式)
-		- [1.1.2 源码方式](#1.1.2-源码方式)
 	- [1.2 示例代码](#1.2-示例代码)
 - [2 第三方库](#2-第三方库)
 - [3 系统要求](#3-系统要求)
@@ -17,53 +15,20 @@ PLPlayerKit 是为 **pili.io** 流媒体云服务提供的一套播放直播流�
 ## 1 快速开始
 
 ### 1.1 配置工程
-#### 1.1.1 二进制包方式
 
-- 下载 PLPlayerKit 的 release zip 文件；
-- 解压后得到 libPLPlayerKit.a 和 其 include 头文件；
-- 将 libPLPlayerKit.a 和 include 头文件选中并拖拽到自己的 Xcode 工程中；
-- 添加 ffmpeg
-- 添加其他依赖库：
-	- libiconv.dylib 
-	- libz.dylib
-	- UIKit.framework
-	- Foundation.framework
-	- CoreGraphics.framework
-	- MediaPlayer.framework
-	- CoreAudio.framework
-	- AudioToolbox.framework
-	- Accelerate.framework
-	- QuartzCore.framework
-	- OpenGLES.framework
-- 添加 search path
-	- 在工程的 Build Settings / Header Search Paths 下添加 PLPlayerKit 的 inclue 目录 和 ffmpeg 头文件目录的相对路径
-- 编译并开始你的工作吧
+- 配置你的 Podfile 文件，添加如下配置信息
 
-#### 1.1.2 源码方式
+```
+pod 'PLPlayerKit', '1.0.1'
+```
 
-- 添加 PLPlayerKit 为你的项目 submodule
+- 安装 CocoaPods 依赖
 
-```shell
-git submodule add https://github.com/pili-io/pili-ios-player.git /Vendor/pili-ios-player.git
-``` 
-	
-- 添加 PLPlayerKit.xcodeproj 为你的 iOS 工程的子工程
-- 在 Build Phases / Target Dependecies 中添加 PLPlayerKit-Universal
-- 在 Build Phases / Link Binary With Libraries 中添加以下依赖库
-	- libPLPlayerKit.a
-	- libiconv.dylib 
-	- libz.dylib
-	- UIKit.framework
-	- Foundation.framework
-	- CoreGraphics.framework
-	- MediaPlayer.framework
-	- CoreAudio.framework
-	- AudioToolbox.framework
-	- Accelerate.framework
-	- QuartzCore.framework
-	- OpenGLES.framework
-- 在功成中添加 ffmpeg，并在 Build Settings / Header Search Paths 中添加 ffmpeg 头文件目录的相对路径
-- 编译并开始你的工作吧
+```
+pod install
+```
+
+- Done! 运行你工程的 workspace
 
 ### 1.2 示例代码
 
@@ -109,13 +74,13 @@ git submodule add https://github.com/pili-io/pili-ios-player.git /Vendor/pili-io
 	viewPlayerViewController.controlMode = PLVideoPlayerControlModeNone;
 ```
 
-## 2 第三方库
+## 2 包含的第三方库
 
 - ffmpeg
 
 ## 3 系统要求
 
-- iOS Target : >= iOS 7
+- iOS Target : >= iOS 6
 
 ## 4 版本历史
 - 1.0.1
